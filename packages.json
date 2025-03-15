@@ -1,0 +1,24 @@
+{
+    "updateurl": "https://raw.githubusercontent.com/eska-0/dbox/refs/heads/main/packages.json",
+    "packages": [
+        {
+            "name": "rbox",
+            "version":"0.0.1",
+            "description":"The rbox application",
+            "url": {
+                "windows":"",
+                "linux":"",
+                "macos":""
+            }
+        },
+        {
+            "name": "",
+            "version":"",
+            "url": {
+                "windows":"",
+                "linux":"",
+                "macos":""
+            }
+        }
+    ]
+}

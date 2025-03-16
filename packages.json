@@ -9,7 +9,8 @@
                 "windows":"",
                 "linux":"",
                 "macos":""
-            }
+            },
+            "repo": ""
         },
         {
             "name": "",
@@ -18,7 +19,8 @@
                 "windows":"",
                 "linux":"",
                 "macos":""
-            }
+            },
+            "repo": ""
         }
     ]
 }

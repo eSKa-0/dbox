@@ -6,7 +6,7 @@ except:
     sys.exit(1)
 def get_install_path(name):
     if platform.system() == "Windows":
-        return Path(os.getenv("ROAMING"), "rbox", name)
+        return Path(os.getenv("ROAMING"), "dbox", name)
     elif platform.system() == "Linux":
         return Path(Path.home(), "Applications", name)
     else:
@@ -87,7 +87,7 @@ def list_pkg():
                 print(f"description: {i["description"]}")
                 print(f"repo:{i["repo"]} ")
     except FileNotFoundError:
-        print("Package file not found, running rbox update -y might help. If not, idk what happened")
+        print("Package file not found, running dbox update -y might help. If not, idk what happened")
     except json.JSONDecodeError:
         print("Package file is corrupt, running dbox update -y might help. If not, i have no idea what happened")
 def main():

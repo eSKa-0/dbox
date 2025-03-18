@@ -92,9 +92,9 @@ def list_pkg():
         print("Package file is corrupt, running dbox update -y might help. If not, i have no idea what happened")
 def main():
     parser = argparse.ArgumentParser(description="eSKa-0's package manager")
-    parser.add_argument("command", choices=["list", "install", "remove", "update", "help"], help="what you would like to do", nargs="?")
-    parser.add_argument("package", help="Package name (required for install and remove commands)")
-    parser.add_argument("-y", "--yes", action="store_true", help="Skip the confirmation process")
+    parser.add_argument("command", choices=["list", "install", "uninstall", "update", "help", "json"], help="Command to execute", nargs="?")
+    parser.add_argument("package", nargs="?", help="Package name (required for install and uninstall)")
+    parser.add_argument("-y", "--yes", action="store_true", help="Skip confirmation prompts")
     args = parser.parse_args()
     if not args.command:
         parser.print_help()
